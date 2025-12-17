@@ -1,11 +1,10 @@
 import boto3
 import json
 from botocore.config import Config
+from APIConfig import KNOWLEDGE_BASE_ID, MODEL_ARN
 
 MODEL_ID = "us.amazon.nova-micro-v1:0"
 REGION_NAME = "us-east-1"
-KNOWLEDGE_BASE_ID = "QQY53HOUGA"  # 你的 Knowledge Base ID
-MODEL_ARN = "arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-micro-v1:0"  # 修正：去掉 us. 前缀
 
 def generate_fitness_advice_with_rag(message: str) -> str:
     """

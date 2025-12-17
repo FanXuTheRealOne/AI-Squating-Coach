@@ -1,8 +1,7 @@
 import json
 import boto3
 from datetime import datetime
-
-S3_BUCKET = "whatevernamesfa"
+from APIConfig import S3_BUCKET
 
 def lambda_handler(event, context):
     try:

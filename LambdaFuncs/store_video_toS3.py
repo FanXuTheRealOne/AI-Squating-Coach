@@ -2,8 +2,7 @@ import json
 import boto3
 import base64
 from datetime import datetime
-
-S3_BUCKET = "whatevernamesfa"
+from APIConfig import S3_BUCKET
 MAX_VIDEO_SIZE = 15 * 1024 * 1024  # 15MB
 
 def parse_multipart(body, content_type):

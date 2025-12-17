@@ -2,10 +2,10 @@ import json
 import boto3
 from datetime import datetime
 from botocore.config import Config
+from APIConfig import S3_BUCKET
 
 MODEL_ID = "us.amazon.nova-lite-v1:0"
 REGION_NAME = "us-east-1"
-S3_BUCKET = "whatevernamesfa"
 MAX_VIDEO_SIZE = 1024 * 1024 * 1024  # 1GB (Nova 模型 S3 URI 方式的最大限制)
 
 def get_bucket_owner() -> str:
