@@ -1,0 +1,8 @@
+
+FrontEnd/APIConfig.swift
+
+# 其他忽略
+Assets.xcassets/
+*.DS_Store
+__pycache__/
+*.pyc
